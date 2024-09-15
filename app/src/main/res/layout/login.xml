@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".home"
+	android:background="@drawable/image_3">
+
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/archivo_black"
+		android:text="@string/chhatrapati_string"
+		android:textColor="#CE8211"
+		android:textSize="24dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.106" />
+
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/alfa_slab_one"
+		android:text="@string/sambhajinagar_string"
+		android:textColor="#F3F0F0"
+		android:textSize="30dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.135" />
+
+	<TextView
+		android:id="@+id/textView4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/alfa_slab_one"
+		android:text="@string/tourism_guide_string"
+		android:textColor="#CE8211"
+		android:textSize="21dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.851"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.189" />
+
+	<View
+		android:id="@+id/view"
+		android:layout_width="match_parent"
+		android:layout_height="170dp"
+		android:background="@drawable/rectangle"
+		app:layout_constraintBottom_toBottomOf="parent" />
+
+	<TextView
+		android:id="@+id/signInWithGoogle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/archivo_black"
+		android:text="SIGN IN"
+		android:textColor="#FFFFFF"
+		android:textSize="34sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.314"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.904" />
+
+	<ImageView
+		android:id="@+id/googleSignInImage"
+		android:layout_width="50dp"
+		android:layout_height="42dp"
+		android:layout_marginStart="8dp"
+		android:src="@drawable/goggle"
+		app:layout_constraintBottom_toBottomOf="@id/signInWithGoogle"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.008"
+		app:layout_constraintStart_toEndOf="@id/signInWithGoogle"
+		app:layout_constraintTop_toTopOf="@id/signInWithGoogle"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<ImageView
+		android:layout_width="270dp"
+		android:layout_height="20dp"
+		android:src="@drawable/line_1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.93"
+		tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

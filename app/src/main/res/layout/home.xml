@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/drawer_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:context=".home_activity">
+
+<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<!-- Your main content layout goes here -->
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@color/white"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+		<ImageView
+			android:id="@+id/iv_hamburger"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginTop="12dp"
+			android:background="@drawable/menu"
+			android:onClick="toggleNavigationDrawer"
+			android:padding="16dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.916"
+			app:layout_constraintStart_toEndOf="@+id/CHhSam"
+			app:layout_constraintTop_toTopOf="parent" />
+
+
+
+		<HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:foregroundGravity="center_vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/search"
+		android:textSize="16sp"
+		app:layout_constraintVertical_bias="0.08">
+
+		<!-- child view -->
+		<LinearLayout
+			android:id="@+id/category"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:foregroundGravity="center"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/adventure"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/rectangle_2_shape"
+					android:layout_marginLeft="10dp">
+
+					<ImageView
+						android:id="@+id/adven"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:src="@drawable/adventure"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/adventureTXT"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Adventure"
+					android:textColor="@color/black"
+					android:layout_marginLeft="20dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/gates"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/rectangle_2_shape"
+					android:layout_marginLeft="10dp">
+
+					<ImageView
+						android:id="@+id/gatesImage"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:src="@drawable/gates"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/gatestxt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Gates"
+					android:textColor="@color/black"
+					android:layout_marginLeft="30dp"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/garden"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/rectangle_2_shape"
+					android:layout_marginLeft="10dp">
+
+					<ImageView
+						android:id="@+id/gardenImage"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:src="@drawable/garden"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/gardentxt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Garden"
+					android:textColor="@color/black"
+					android:layout_marginLeft="25dp"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/historical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/rectangle_2_shape"
+					android:layout_marginLeft="10dp">
+
+					<ImageView
+						android:id="@+id/histo"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:src="@drawable/histo"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/histTxt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Historical"
+					android:textColor="@color/black"
+					android:layout_marginLeft="23dp"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/temple"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/rectangle_2_shape"
+					android:layout_marginLeft="10dp">
+
+					<ImageView
+						android:id="@+id/templeImage"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:src="@drawable/temple"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/templeTxt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Temple"
+					android:textColor="@color/black"
+					android:layout_marginLeft="25dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/lake"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="80dp"
+					android:layout_height="40dp"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/rectangle_2_shape"
+					android:layout_marginLeft="10dp">
+
+					<ImageView
+						android:id="@+id/lakes"
+						android:layout_width="80dp"
+						android:layout_height="39dp"
+						android:src="@drawable/lakes"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/lakesTxt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lakes"
+					android:textColor="@color/black"
+					android:layout_marginLeft="27dp"/>
+			</LinearLayout>
+
+		</LinearLayout>
+	</HorizontalScrollView>
+
+	<!-- child view -->
+
+
+<ListView
+	android:id="@+id/listData"
+	android:layout_width="5dp"
+	android:layout_height="5dp"
+	tools:ignore="MissingConstraints">
+</ListView>
+	<TextView
+		android:id="@+id/CHhSam"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="sans-serif-smallcaps"
+		android:text="Chhtrapati Sambhajinagar"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.087"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.022" />
+
+
+	<!-- LinearLayout children -->
+
+	<TextView
+		android:id="@+id/city"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:fontFamily="@font/archivo_black"
+		android:text="The City of Gates"
+		android:textSize="18sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.075"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/CHhSam" />
+
+	<AutoCompleteTextView
+		android:id="@+id/search"
+		android:layout_width="330dp"
+		android:layout_height="53dp"
+		android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"
+		android:background="@drawable/rounded_corner_bg"
+		android:hapticFeedbackEnabled="true"
+		android:hint="Enter the place"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.581"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/city"
+		app:layout_constraintVertical_bias="0.026" />
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/vector_ek1"
+		app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+		app:layout_constraintEnd_toEndOf="@+id/search"
+		app:layout_constraintHorizontal_bias="0.927"
+		app:layout_constraintStart_toStartOf="@+id/search"
+		app:layout_constraintTop_toTopOf="@+id/search"
+		app:layout_constraintVertical_bias="0.14" />
+
+	<TextView
+		android:id="@+id/mostvisited"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="5dp"
+		android:layout_marginTop="12dp"
+		android:text="Most Visited"
+		android:textColor="@color/black"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.056"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="0dp"
+		android:layout_height="240dp"
+		android:layout_marginTop="5dp"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
+		android:scrollbars="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/mostvisited" />
+
+	<TextView
+		android:id="@+id/Explore"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="Explore popular Categories"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:textColor="@color/black"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.064"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/search" />
+
+	<TextView
+		android:id="@+id/home"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="5dp"
+		android:layout_marginTop="30dp"
+		android:text="HomeStays"
+		android:textColor="@color/black"
+		android:textStyle="bold"
+		android:textSize="16sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.039"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/secondRecyclerView"
+		android:layout_width="0dp"
+		android:layout_marginBottom="25dp"
+		android:layout_height="350dp"
+		android:layout_marginTop="5dp"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
+		android:scrollbars="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/home" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+	<com.google.android.material.navigation.NavigationView
+		android:id="@+id/nav_view"
+		android:layout_width="wrap_content"
+		android:layout_height="250dp"
+		android:layout_gravity="end"
+		android:fitsSystemWindows="true"
+		app:menu="@menu/nav_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

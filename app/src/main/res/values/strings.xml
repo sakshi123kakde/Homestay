@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- splash strings -->
+
+    <string name="app_name">Page 1</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="community_string">Community  </string>
+
+
+    <string name="tourism_string">Tourism </string>
+
+
+    <string name="_sign_in_string">SIGN IN</string>
+    <string name="sambhajinagar_string">SAMBHAJINAGAR</string>
+    <string name="chhatrapati_string">Chhatrapati</string>
+    <string name="tourism_guide_string">Tourism Guide</string>
+
+    <!--	hemant-->
+    <string name="most_visited_string">Most Visited</string>
+    <string name="near_you_string">Near You</string>
+    <string name="himayat_baugh_hill_string">Himayat baugh Hill</string>
+    <string name="try__himayat_baugh___string">Try "Himayat baugh "</string>
+    <string name="himayat_baugh_string">Chh. Sambhajinagar </string>
+    <string name="himayat_baugh_hill_ek1_string">The City of Gates</string>
+    <string name="himayat_baugh_hill_ek2_string">Himayat Baugh Hill</string>
+    <string name="himayat_baugh_hill_ek3_string">Himayat baugh Hill</string>
+    <string name="kranti_chawk_string">Kranti Chawk</string>
+    <string name="_5_9km_string">5.9km</string>
+    <string name="visit_now_string">Visit Now</string>
+    <string name="bibi_ka_maqbara_string">Bibi Ka Maqbara</string>
+    <string name="visit_now_ek1_string">Visit now</string>
+    <string name="_4_7km_string">4.7km</string>
+    <string name="default_web_client_id">407166665898-ml37iadnvnjccpjnme4b09ognc8ougd3.apps.googleusercontent.com</string>
+
+
+    <string-array name="numbers">
+        <item>Select no of child</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="numbers2">
+        <item>Select no of Adult</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="numbers3">
+        <item>Number of Rooms</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>Adventures</item>
+        <item>Garden</item>
+        <item>Gates</item>
+        <item>Historical</item>
+        <item>Lake</item>
+        <item>Temple</item>
+        <item>Wild</item>
+    </string-array>
+
+    <string name="spinner_hint">children number</string>
+</resources>

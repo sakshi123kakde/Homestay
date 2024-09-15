@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebackground"
+    tools:context=".About">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow_back_black_24dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/aboutTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Welcome to our Chhtrapati Sambhajinar Homestay Application!\n\nWe are a team of passionate locals dedicated to showcasing the rich cultural and historical heritage of Aurangabad. As residents of this vibrant city, we understand the unique charms and hidden gems that make Aurangabad a must-visit destination.\n\nOur homestay platform connects travelers with warm and welcoming Aurangabad hosts, providing an authentic experience that goes beyond the typical hotel stay. By staying in a local's home, visitors will have the opportunity to immerse themselves in the city's daily life, traditions, and cuisine.\n\nEach of our carefully curated homestays offers comfortable accommodations, personal attention from your host, and insider tips to help guests discover Aurangabad like a true local. From the majestic Ajanta and Ellora Caves to the architectural wonders of Bibi ka Maqbara, we'll ensure visitors make the most of their time in our vibrant city.\n\nWhether you're seeking a relaxing getaway, a cultural immersion, or a jumping-off point to explore Maharashtra, our Aurangabad Homestay Application is your gateway to unforgettable experiences.\n\nAre you an Aurangabad local with a cozy, inviting home to share? Join our growing community of homestay hosts and become a part of our mission to showcase the best of Aurangabad. Contact us today to list your property and start welcoming travelers from around the world!\n\nReady to unlock the secrets of Aurangabad? Contact us now to book your dream homestay and embark on an extraordinary journey!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Contact US "
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aboutTxt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:padding="20dp"
+            android:drawablePadding="10dp"
+            android:text="85967896574"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/call_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aboutTxt"
+            tools:ignore="InvalidId" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="124dp"
+            android:drawableStart="@drawable/email_24dp"
+            android:padding="20dp"
+            android:drawablePadding="10dp"
+            android:text="ChhSambhjinagartourism@gmail.com"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aboutTxt"
+            tools:ignore="InvalidId"
+            android:layout_marginBottom="25dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

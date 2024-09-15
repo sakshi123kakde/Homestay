@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "407166665898",
+    "project_id": "uiaurangabad",
+    "storage_bucket": "uiaurangabad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407166665898:android:b3dce63c8bced35a2f7cd3",
+        "android_client_info": {
+          "package_name": "com.example.page1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOaMW-ENNQt3d-Nx6Zxb7A6nanVtSJUzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
